@@ -1,0 +1,12 @@
+test_buy_one_company (test_stocks2.StocksTest.test_buy_one_company) ... ok
+test_sell_big (test_stocks2.StocksTest.test_sell_big) ... ok
+test_sell_float (test_stocks2.StocksTest.test_sell_float) ... ok
+test_sell_small (test_stocks2.StocksTest.test_sell_small) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+Sold 800 shares of CompanyX at $200 per share.
+Sold 100.5 shares of CompanyY at $55.5 per share.
+Sold 5 shares of CompanyA at $50 per share.
