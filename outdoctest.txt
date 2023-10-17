@@ -1,0 +1,55 @@
+Trying:
+    stocks = Stocks()
+Expecting nothing
+ok
+Trying:
+    stocks.buy("CompanyA", 150, 55)  # Buying 150 shares of CompanyA at $55 per share
+Expecting nothing
+ok
+Trying:
+    stocks.buy("CompanyB", 250, 40)  # Buying 250 shares of CompanyB at $40 per share
+Expecting nothing
+ok
+Trying:
+    stocks.sell("CompanyA", 50)  # Selling 50 shares of CompanyA
+Expecting:
+    Sold 50 shares of CompanyA at $55 per share.
+ok
+Trying:
+    stocks.stocks
+Expecting:
+    [['CompanyA', 100, 55], ['CompanyB', 250, 40]]
+ok
+Trying:
+    stocks.sell("CompanyB", 150)  # Selling 150 shares of CompanyB
+Expecting:
+    Sold 150 shares of CompanyB at $40 per share.
+ok
+Trying:
+    stocks.stocks
+Expecting:
+    [['CompanyA', 100, 55], ['CompanyB', 100, 40]]
+ok
+Trying:
+    stocks.sell("CompanyA", 70)  # Selling 70 shares of CompanyA
+Expecting:
+    Sold 70 shares of CompanyA at $55 per share.
+ok
+Trying:
+    stocks.stocks
+Expecting:
+    [['CompanyA', 30, 55], ['CompanyB', 100, 40]]
+ok
+7 items had no tests:
+    stocks1
+    stocks1.Stocks
+    stocks1.Stocks.__init__
+    stocks1.Stocks.buy
+    stocks1.Stocks.cost_basis
+    stocks1.Stocks.cost_basis_company
+    stocks1.Stocks.print_portfolio
+1 items passed all tests:
+   9 tests in stocks1.Stocks.sell
+9 tests in 8 items.
+9 passed and 0 failed.
+Test passed.
